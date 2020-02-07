@@ -79,29 +79,29 @@ make a model be in unity first to try the cloud shader
 >
 >public class SoundController : MonoBehaviour
 >{
->    public AudioSource goodSound;
->    public AudioSource badSound;
+>public AudioSource goodSound;
+>public AudioSource badSound;
 >
- >   // Start is called before the first frame update
- >   void Start()
- >   {
- >       badSound.Pause();
- >   }
+>// Start is called before the first frame update
+> void Start()
+>{
+>badSound.Pause();
+>}
 >
- >   // Update is called once per frame
+>   // Update is called once per frame
 >    void Update()
- >   {
- >       if (Input.GetKeyDown(KeyCode.Space))
- >       {
- >           goodSound.Pause();
- >           badSound.Play();
- >       }
+>   {
+>       if (Input.GetKeyDown(KeyCode.Space))
+>       {
+>           goodSound.Pause();
+>           badSound.Play();
+>       }
 >
- >       if (Input.GetKeyUp(KeyCode.Space))
- >       {
- >           goodSound.Play();
- >           badSound.Pause();
- >       }
+>       if (Input.GetKeyUp(KeyCode.Space))
+>       {
+>           goodSound.Play();
+>           badSound.Pause();
+>       }
 >    }
 >}
 >
