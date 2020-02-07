@@ -78,19 +78,25 @@ make a model be in unity first to try the cloud shader
 ## Step5. Sound Control and Design
 >
 >public class SoundController : MonoBehaviour
+>
 >{
+>
 >public AudioSource goodSound;
+>
 >public AudioSource badSound;
 >
 >// Start is called before the first frame update
-> void Start()
->{
+>
+> void Start(){
+>
 >badSound.Pause();
+>
 >}
 >
 >   // Update is called once per frame
 >    void Update()
->   {
+> 
+>{
 >       if (Input.GetKeyDown(KeyCode.Space))
 >       {
 >           goodSound.Pause();
@@ -101,8 +107,11 @@ make a model be in unity first to try the cloud shader
 >       {
 >           goodSound.Play();
 >           badSound.Pause();
->       }
->    }
+> 
+>}
+>
+>}
+>
 >}
 >
 >
